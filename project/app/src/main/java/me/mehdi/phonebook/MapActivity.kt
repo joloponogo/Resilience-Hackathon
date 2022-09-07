@@ -10,6 +10,7 @@ import org.osmdroid.tileprovider.tilesource.TileSourceFactory
 import org.osmdroid.util.GeoPoint
 import org.osmdroid.views.MapView
 import android.widget.ArrayAdapter
+import android.view.View
 
 class MapActivity : AppCompatActivity() {
 
@@ -40,15 +41,20 @@ class MapActivity : AppCompatActivity() {
 
         controller.animateTo(mapPoint)
 
-        val textView1 = findViewById(R.id.start) as AutoCompleteTextView
+        val textView1 = findViewById<AutoCompleteTextView>(R.id.start)
         val suggestions1: Array<out String> = resources.getStringArray(R.array.suggestions)
         ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, suggestions1).also {
             adapter -> textView1.setAdapter(adapter)
         }
-        val textView2 = findViewById(R.id.end) as AutoCompleteTextView
+        val textView2 = findViewById<AutoCompleteTextView>(R.id.end)
         val suggestions2: Array<out String> = resources.getStringArray(R.array.suggestions)
         ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, suggestions2).also {
             adapter -> textView2.setAdapter(adapter)
+        }
+
+        fun searchRoute(view: View)   {
+            //construct the route from A to B
+            textView1.setText("Button Clicked")
         }
     }
 }
