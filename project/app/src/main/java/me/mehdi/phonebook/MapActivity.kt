@@ -52,9 +52,18 @@ class MapActivity : AppCompatActivity() {
             adapter -> textView2.setAdapter(adapter)
         }
 
-        fun searchRoute(view: View)   {
+//        fun searchRoute(view: View)   {
             //construct the route from A to B
-            textView1.setText("Button Clicked")
-        }
+//
+  //      }
+    }
+
+    fun searchRoute(view: View) {
+        // get location from Starting Point
+        val textView1 = findViewById<AutoCompleteTextView>(R.id.start)
+        textView1.setText("Button Clicked")
+        // get location from End Point
+        val textView2 = findViewById<AutoCompleteTextView>(R.id.end)
+        textView1.setText("Yayyyy")
     }
 }
