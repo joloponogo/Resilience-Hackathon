@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Users\\manim\\.gradle\\daemon\\7.3.3\\com.example.test1.app-mergeDebugResources-40:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\manim\\.gradle\\daemon\\7.3.3\\com.example.test1.app-main-43:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\manim\\.gradle\\daemon\\7.3.3\\com.example.test1.app-mergeDebugResources-40:\\layout\\content_main.xml",
+        "source": "C:\\Users\\manim\\.gradle\\daemon\\7.3.3\\com.example.test1.app-main-43:\\layout\\content_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\manim\\.gradle\\daemon\\7.3.3\\com.example.test1.app-mergeDebugResources-40:\\layout\\fragment_second.xml",
+        "source": "C:\\Users\\manim\\.gradle\\daemon\\7.3.3\\com.example.test1.app-main-43:\\layout\\fragment_second.xml"
+    },
+    {
+        "merged": "com.example.test1.app-mergeDebugResources-40:/layout/fragment_second.xml",
+        "source": "com.example.test1.app-main-43:/layout/fragment_second.xml"
+    },
+    {
+        "merged": "C:\\Users\\manim\\.gradle\\daemon\\7.3.3\\com.example.test1.app-mergeDebugResources-40:\\layout\\fragment_first.xml",
+        "source": "C:\\Users\\manim\\.gradle\\daemon\\7.3.3\\com.example.test1.app-main-43:\\layout\\fragment_first.xml"
+    }
+]
