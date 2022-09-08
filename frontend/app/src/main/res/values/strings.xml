@@ -1,0 +1,46 @@
+<resources>
+
+    <!--
+        Strings Used For Buttons/Fields in the Application
+    -->
+    <string name="app_name">VeloSafe</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">VeloSafe - Route Finder</string>
+    <string name="second_fragment_label">VeloSafe - Street Rating</string>
+    <string name="firstFragment">Rate a Street</string>
+    <string name="secondFragment">Search a Route</string>
+
+    <!--
+        Place Suggestion Names - Autocomplete Suggestions for Place Names for Start/End Point Selection
+    -->
+
+    <string-array name="suggestions">
+        <item>Afghanistan</item>
+        <item>ETH Hauptgebäude</item>
+        <item>ETH Hönggerberg</item>
+        <item>Zürich HB</item>
+        <item>Opernhaus</item>
+        <item>Bahnhof Stadelhofen</item>
+        <item>Paradeplatz</item>
+        <item>Platzspitz</item>
+        <item>Sihlbrücke</item>
+    </string-array>
+
+    <!--
+        Street Suggestion Names - Autocomplete Suggestions for Street Names in the Street Rating Window
+    -->
+    <string-array name="streetsuggestions">
+        <item>Rämistrasse</item>
+        <item>Bahnhofstrasse</item>
+        <item>Langstrasse</item>
+        <item>Freiestrasse</item>
+        <item>Gessner-Allee</item>
+        <item>Universitätsstrasse</item>
+        <item>Neumühlequai</item>
+        <item>Bahnhofbrücke</item>
+        <item>Bahnhofquai</item>
+        <item>Rudolf-Brun-Brücke</item>
+        <item>Limmatquai</item>
+    </string-array>
+</resources>
