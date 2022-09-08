@@ -15,6 +15,10 @@ import com.example.test1.databinding.FragmentSecondBinding;
 
 import org.w3c.dom.Text;
 
+import androidx.appcompat.app.AppCompatActivity;
+import android.widget.ArrayAdapter;
+
+
 public class SecondFragment extends Fragment {
 
     private FragmentSecondBinding binding;
@@ -26,6 +30,13 @@ public class SecondFragment extends Fragment {
     ) {
 
         binding = FragmentSecondBinding.inflate(inflater, container, false);
+
+        AutoCompleteTextView textView3 = (AutoCompleteTextView) binding.getRoot().findViewById(R.id.streetSuggestions);
+        String[] suggestions2 = getResources().getStringArray(R.array.streetsuggestions);
+        ArrayAdapter<String> adapter2 =
+                new ArrayAdapter<String>(this.getActivity(), android.R.layout.simple_list_item_1, suggestions2);
+        textView3.setAdapter(adapter2);
+
         return binding.getRoot();
 
     }
@@ -43,8 +54,8 @@ public class SecondFragment extends Fragment {
         binding.changer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                TextView textView = (TextView) binding.getRoot().findViewById(R.id.changeText);
-                textView.setText("Boomer");
+                // TextView textView = (TextView) binding.getRoot().findViewById(R.id.);
+                // textView.setText("Boomer");
             }
         });
 
