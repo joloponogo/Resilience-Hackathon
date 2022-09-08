@@ -13,6 +13,7 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.test1.databinding.FragmentSecondBinding;
+import com.google.android.material.snackbar.Snackbar;
 
 import org.w3c.dom.Text;
 
@@ -60,6 +61,10 @@ public class SecondFragment extends Fragment {
                 RatingBar streetRating = binding.getRoot().findViewById(R.id.ratingBar);
                 // showing results for debugging purposes
                 // streetName.setText("OK " + streetRating.getRating());
+
+                Snackbar myBar = Snackbar.make(binding.getRoot().findViewById(R.id.streetSuggestions),
+                        "Rated " + streetName.getText() + " " + streetRating.getRating() + " star" + (streetRating.getRating() != 1 ? "s" : ""), Snackbar.LENGTH_SHORT);
+                myBar.show();
             }
         });
 
