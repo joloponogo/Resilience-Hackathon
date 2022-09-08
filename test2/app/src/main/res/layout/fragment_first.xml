@@ -18,7 +18,7 @@
         <AutoCompleteTextView
             android:id="@+id/start"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="60dp"
             android:hint="Starting Point" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -35,7 +35,7 @@
         <AutoCompleteTextView
             android:id="@+id/end"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="60dp"
             android:hint="End Point" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -51,9 +51,10 @@
     <Button
         android:id="@+id/button_first"
         android:layout_width="377dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="80dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="60dp"
         android:text="@string/firstFragment"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.529"

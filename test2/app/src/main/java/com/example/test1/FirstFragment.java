@@ -46,7 +46,7 @@ public class FirstFragment extends Fragment {
                 AutoCompleteTextView pointB = binding.getRoot().findViewById(R.id.end);
                 // showing results for debugging purposes
                 // pointA.setText("OK " + pointB.getText());
-                // pointB.setText("Boomer");
+                // pointB.setText("Also OK");
             }
         });
     }
