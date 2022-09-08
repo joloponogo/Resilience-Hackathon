@@ -20,12 +20,18 @@ As the user travels, their real-time location is also tracked. After finishing a
 (1 being worst, 5 best) -- any segments taken. The user can only rate segments they have been at, only once after each time they have been there,
 and at the latest 3 days after having been there.
 
+## Documentation
+### Frontend
+The whole frontend is located in the frontend folder, and is one single project made with [Android Studio](https://developer.android.com/studio).  
+Everything not documented inside the java code was already given by the **"Phone and Tablet" -> "Basic Activity" Template** of Android Studio.
+The map service we are using is [OpenStreetMap](https://www.openstreetmap.org), integrated into the code through the [osmdroid library](https://github.com/osmdroid/osmdroid/wiki).
+
 ## Credits
-Maitraya Desai
-Matthias Lott
-Moritz Mani
-Oliver Graf
-Paulo Sepúlveda
+Maitraya Desai  
+Matthias Lott  
+Moritz Mani  
+Oliver Graf  
+Paulo Sepúlveda  
 
 ## License
 VeloSafe is completely open-source, hence one is free to adapt, change and increment its original code for whatever desired purposes.
