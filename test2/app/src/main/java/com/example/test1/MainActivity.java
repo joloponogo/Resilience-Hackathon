@@ -22,43 +22,41 @@ import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 
-//import org.osmdroid.api.IMapController;
-//import org.osmdroid.config.Configuration;
-//import org.osmdroid.tileprovider.tilesource.TileSourceFactory;
-//import org.osmdroid.util.GeoPoint;
-//import org.osmdroid.views.MapView;
+import org.osmdroid.api.IMapController;
+import org.osmdroid.config.Configuration;
+import org.osmdroid.tileprovider.tilesource.TileSourceFactory;
+import org.osmdroid.util.GeoPoint;
+import org.osmdroid.views.MapView;
 
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
     private ActivityMainBinding binding;
 
-//    MapView map = null;
+    MapView map = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        Context ctx = getApplicationContext();
-       // Configuration.getInstance().load(ctx, PreferenceManager.getDefaultSharedPreferences(ctx));
-
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
- //       map = (MapView) findViewById(R.id.map);
- //       map.setTileSource(TileSourceFactory.MAPNIK);
+        map = (MapView) findViewById(R.id.map);
+        map.setTileSource(TileSourceFactory.MAPNIK);
 
-        /*
+        Configuration.getInstance().load(getApplicationContext(), PreferenceManager.getDefaultSharedPreferences(getApplicationContext()));
+
         IMapController controller = map.getController();
-        GeoPoint mapPoint = new GeoPoint(getIntent().getDoubleExtra("longitude",8.5476),
-                getIntent().getDoubleExtra("latitude", 47.3764));
+        GeoPoint mapPoint = new GeoPoint(getIntent().getDoubleExtra("latitude", 47.3764),
+                getIntent().getDoubleExtra("longitude",8.5476));
 
         controller.setZoom(19.0);
         controller.animateTo(mapPoint);
 
         map.setBuiltInZoomControls(true);
         map.setMultiTouchControls(true);
-        */
+
 
         setSupportActionBar(binding.toolbar);
 

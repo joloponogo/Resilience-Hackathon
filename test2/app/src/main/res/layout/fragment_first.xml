@@ -53,7 +53,7 @@
         android:id="@+id/button_first"
         android:layout_width="377dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="80dp"
         android:text="@string/firstFragment"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
