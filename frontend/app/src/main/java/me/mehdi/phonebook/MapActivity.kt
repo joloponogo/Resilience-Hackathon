@@ -1,6 +1,5 @@
 package me.mehdi.phonebook
 
-import android.location.Location
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.AutoCompleteTextView
@@ -25,13 +24,11 @@ class MapActivity : AppCompatActivity() {
         mMap = binding.mapView
         mMap.setTileSource(TileSourceFactory.MAPNIK)
 
-
-
         Configuration.getInstance().load(applicationContext, getSharedPreferences("phonebook_app", MODE_PRIVATE))
 
+        // ETH Coordinates
         val longitude = intent.getDoubleExtra("longitude", 8.5476)
         val latitude = intent.getDoubleExtra("latitude", 47.3764)
-
 
         val controller = mMap.controller
 
@@ -51,11 +48,6 @@ class MapActivity : AppCompatActivity() {
         ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, suggestions2).also {
             adapter -> textView2.setAdapter(adapter)
         }
-
-//        fun searchRoute(view: View)   {
-            //construct the route from A to B
-//
-  //      }
     }
 
     fun searchRoute(view: View) {
@@ -64,6 +56,6 @@ class MapActivity : AppCompatActivity() {
         textView1.setText("Button Clicked")
         // get location from End Point
         val textView2 = findViewById<AutoCompleteTextView>(R.id.end)
-        textView1.setText("Yayyyy")
+        textView2.setText("Yayyyy")
     }
 }
