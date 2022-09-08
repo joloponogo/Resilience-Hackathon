@@ -42,10 +42,11 @@ public class FirstFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 // get input at point A and B
-                AutoCompleteTextView PointA = binding.getRoot().findViewById(R.id.start);
-                AutoCompleteTextView PointB = binding.getRoot().findViewById(R.id.end);
-                PointA.setText("OK");
-                PointB.setText("Boomer");
+                AutoCompleteTextView pointA = binding.getRoot().findViewById(R.id.start);
+                AutoCompleteTextView pointB = binding.getRoot().findViewById(R.id.end);
+                // showing results for debugging purposes
+                // pointA.setText("OK " + pointB.getText());
+                // pointB.setText("Boomer");
             }
         });
     }

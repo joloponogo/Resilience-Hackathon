@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AutoCompleteTextView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -51,11 +52,14 @@ public class SecondFragment extends Fragment {
                         .navigate(R.id.action_SecondFragment_to_FirstFragment);
             }
         });
-        binding.changer.setOnClickListener(new View.OnClickListener() {
+        binding.rateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // TextView textView = (TextView) binding.getRoot().findViewById(R.id.);
-                // textView.setText("Boomer");
+                // get input at street and rating
+                AutoCompleteTextView streetName = binding.getRoot().findViewById(R.id.streetSuggestions);
+                RatingBar streetRating = binding.getRoot().findViewById(R.id.ratingBar);
+                // showing results for debugging purposes
+                // streetName.setText("OK " + streetRating.getRating());
             }
         });
 
