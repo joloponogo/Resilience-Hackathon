@@ -33,6 +33,7 @@ public class SecondFragment extends Fragment {
 
         binding = FragmentSecondBinding.inflate(inflater, container, false);
 
+        // give suggestions for "Enter a Street Name" search bar
         AutoCompleteTextView textView3 = (AutoCompleteTextView) binding.getRoot().findViewById(R.id.streetSuggestions);
         String[] suggestions2 = getResources().getStringArray(R.array.streetsuggestions);
         ArrayAdapter<String> adapter2 =
@@ -46,6 +47,7 @@ public class SecondFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        // if the "Search a Route" button is clicked, go to the first fragment
         binding.buttonSecond.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -53,15 +55,20 @@ public class SecondFragment extends Fragment {
                         .navigate(R.id.action_SecondFragment_to_FirstFragment);
             }
         });
+
+        // if the "Rate" button is clicked, get the input of "Enter a Street Name" and "5 Star Rating"
         binding.rateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // get input at street and rating
                 AutoCompleteTextView streetName = binding.getRoot().findViewById(R.id.streetSuggestions);
                 RatingBar streetRating = binding.getRoot().findViewById(R.id.ratingBar);
-                // showing results for debugging purposes
-                // streetName.setText("OK " + streetRating.getRating());
+                /*
+                 showing results for debugging purposes
+                 streetName.setText("OK " + streetRating.getRating());
+                */
 
+                // show a bar that tells you how you just rated which street
                 Snackbar myBar = Snackbar.make(binding.getRoot().findViewById(R.id.streetSuggestions),
                         "Rated " + streetName.getText() + " " + streetRating.getRating() + " star" + (streetRating.getRating() != 1 ? "s" : ""), Snackbar.LENGTH_SHORT);
                 myBar.show();

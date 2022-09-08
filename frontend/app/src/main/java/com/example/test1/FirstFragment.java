@@ -31,6 +31,7 @@ public class FirstFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        // if the "Rate a Street" button is clicked, go to the second fragment
         binding.buttonFirst.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -38,15 +39,19 @@ public class FirstFragment extends Fragment {
                         .navigate(R.id.action_FirstFragment_to_SecondFragment);
             }
         });
+
+        // if the "Search" button is clicked, get the input of "Starting Point" and "End Point"
         binding.searchButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // get input at point A and B
                 AutoCompleteTextView pointA = binding.getRoot().findViewById(R.id.start);
                 AutoCompleteTextView pointB = binding.getRoot().findViewById(R.id.end);
-                // showing results for debugging purposes
-                // pointA.setText("OK " + pointB.getText());
-                // pointB.setText("Also OK");
+                /*
+                 showing results for debugging purposes
+                 pointA.setText("OK " + pointB.getText());
+                 pointB.setText("Also OK");
+                */
             }
         });
     }

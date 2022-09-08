@@ -42,21 +42,24 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        // display an osmdroid map built with tiles
         map = (MapView) findViewById(R.id.map);
         map.setTileSource(TileSourceFactory.MAPNIK);
 
         Configuration.getInstance().load(getApplicationContext(), PreferenceManager.getDefaultSharedPreferences(getApplicationContext()));
 
-        IMapController controller = map.getController();
+        // Fix a Point on the map ...
         GeoPoint mapPoint = new GeoPoint(getIntent().getDoubleExtra("latitude", 47.3764),
                 getIntent().getDoubleExtra("longitude",8.5476));
 
+        // ... and start the map zoomed in to it
+        IMapController controller = map.getController();
         controller.setZoom(19.0);
         controller.animateTo(mapPoint);
 
+        // Zoom function by button and with two fingers
         map.setBuiltInZoomControls(true);
         map.setMultiTouchControls(true);
-
 
         setSupportActionBar(binding.toolbar);
 
@@ -64,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
         appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
 
+        // give suggestions for "Starting Point" and "End Point" search bar
         AutoCompleteTextView textView1 = (AutoCompleteTextView) findViewById(R.id.start);
         AutoCompleteTextView textView2 = (AutoCompleteTextView) findViewById(R.id.end);
         String[] suggestions = getResources().getStringArray(R.array.suggestions);
