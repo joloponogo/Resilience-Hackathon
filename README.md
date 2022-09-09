@@ -13,6 +13,10 @@ The whole frontend is located in the frontend folder, and is one single project 
 Everything not documented inside the java code was already given by the **"Phone and Tablet" -> "Basic Activity" Template** of Android Studio.
 The map service we are using is [OpenStreetMap](https://www.openstreetmap.org), integrated into the code through the [osmdroid library](https://github.com/osmdroid/osmdroid/wiki).
 
+### Backend
+The backend code is located in the backend folder. It contains python scripts to generate interactible views that compare normal routing to VeloSafe routing.
+It leverages the functionality of [OSMnx](https://github.com/gboeing/osmnx) to fetch and interpret [OpenStreetMap](https://www.openstreetmap.org) data.
+
 ## Credits
 Maitraya Desai  
 Matthias Lott  
