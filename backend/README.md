@@ -4,7 +4,7 @@
 
 1. Install Python
 2. Install the required modules. They are **osmnx**, **scikit-learn**, **folium**
-   Recommandation: Some of these packages are harder to install on Windows, for a more streamlined experience one might prefer to use Linux.
+   Recommendation: Some of these packages are harder to install on Windows, for a more streamlined experience one might prefer to use Linux.
 
 ## How to use
 
@@ -16,7 +16,7 @@ Simply run the python scripts and inspect the generated `output.html` file.
 The target location can easily be changed by modifying the attributes for `ox.graph_from_place`/`ox.graph_from_address`.
 The start-/endpoint locations can be extended by modifying the `places`- dictionary.
 
-To further optimise the algorithm, the notebook `VeloSafe_GraphDataAnalysis.ipynb` might help in getting an overview of the available attributes.
+To further optimize the algorithm, the notebook `VeloSafe_GraphDataAnalysis.ipynb` might help in getting an overview of the available attributes.
 
 ## Algorithm details
 
