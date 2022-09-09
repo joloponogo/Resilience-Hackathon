@@ -8,7 +8,7 @@ available from OpenStreetMaps, especially the construction of custom weighted gr
 cohesive, user-friendly interface via AndroidStudio; the integration of both back- and frontends in the future.  
 
 ### The idea
-Upon opening the application, a map is shown alongside a search bar where start and endpoints of a journey are to be input, which can also be directly pinned on the map. In doing so, the routing-algorithm will then calculate and showcase the safest route between the selected coordinates according to how safe the path is for cyclists (for instance, having proper bicycle tracks along the way rather than shared lanes as well as user ratings). As the user travels, their real-time location is also tracked. After finishing a journey, the user is allowed to rate segments on a scale from 1 to 5 (1 being worst, 5 best).
+Upon opening the application, a map is shown alongside a search bar where start and endpoints of a journey are to be input, which can also be directly pinned on the map. In doing so, the routing-algorithm will then calculate and showcase the safest route between the selected coordinates according to how safe the path is for cyclists (user ratings as well as, for instance, having proper bicycle tracks along the way rather than shared lanes). As the user travels, their real-time location is also tracked. After finishing a journey, the user is allowed to rate segments on a scale from 1 to 5 (1 being worst, 5 best).
 
 ## Documentation
 ### Frontend
