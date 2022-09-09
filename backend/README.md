@@ -31,7 +31,7 @@ To further optimise the algorithm, the notebook `VeloSafe_GraphDataAnalysis.ipyn
    - trunk_link: 1.5
    - default: 1.0
 
-&nbsp;&nbsp;&nbsp;&nbsp;$\Longrightarrow$ Average both of these weights to obtain a **heuristic weight**.
+&nbsp;&nbsp;&nbsp;&nbsp; $\Longrightarrow$ Average both of these weights to obtain a **heuristic weight**.
 
 **User ratings**:
  - User ratings are also represented as a weight in [0.5, 1.5]. Currently, they are randomly generated. In the future, they will be fetched from a database. This gives a **user weight**.
