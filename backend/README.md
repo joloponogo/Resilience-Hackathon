@@ -8,7 +8,7 @@
 
 ## How to use
 
-`velosafe_backend_heuristics.py` compares the **baseline** algorithm (red) to our **heuristics** (yellow).
+`velosafe_backend_heuristics.py` compares the **baseline** algorithm (red) to our **heuristics** (yellow).  
 `velosafe_backend_heuristics_user.py` compares our **heuristics** (yellow) to **heuristics and user ratings** combined (green).
 
 Simply run the python scripts and inspect the generated `output.html` file.
@@ -42,8 +42,8 @@ $\Longrightarrow$ Taking the weighted average of heuristic weight and user weigh
 
 <div style="display: flex; align-items: center; justify-content: space-around">
    <div>
-      <a href="/examples/heuristics_HB_sihlbruecke.html">
-         <img src="/examples/heuristics_HB_sihlbruecke.png" alt="Routing from Zurich Main Station to Sihlbrücke" height=250>
+      <a href="examples/heuristics_HB_sihlbruecke.html">
+         <img src="examples/heuristics_HB_sihlbruecke.png" alt="Routing from Zurich Main Station to Sihlbrücke" height=250>
       </a>
       <div style="display: flex; flex-direction: row; justify-content: space-around">
          <p style="color: #bf0202">Baseline</p>
@@ -52,8 +52,8 @@ $\Longrightarrow$ Taking the weighted average of heuristic weight and user weigh
       
    </div>
    <div>
-      <a href="/examples/heuristics_user_sihlbruecke_opera.html">
-         <img src="/examples/heuristics_user_sihlbruecke_opera.png" alt="Routing from Sihlbrücke to Opernhaus" height=250>
+      <a href="examples/heuristics_user_sihlbruecke_opera.html">
+         <img src="examples/heuristics_user_sihlbruecke_opera.png" alt="Routing from Sihlbrücke to Opernhaus" height=250>
       </a>
       <div style="display: flex; flex-direction: row; justify-content: space-around">
          <p style="color: #a19e15">Heuristics</p>
