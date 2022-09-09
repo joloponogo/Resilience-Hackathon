@@ -38,27 +38,7 @@ To further optimise the algorithm, the notebook `VeloSafe_GraphDataAnalysis.ipyn
 
 $\Longrightarrow$ Taking the weighted average of heuristic weight and user weight gives the **final weight** which will be used to scale the optimisation parameter of the routing algorithm.
 
-## Examples (click on them for an interactive view)
+## Examples
+**Legend:** Baseline (red), Heuristics (yellow), Heuristics + User (green)
 
-<div style="display: flex; align-items: center; justify-content: space-around">
-   <div>
-      <a href="examples/heuristics_HB_sihlbruecke.html">
-         <img src="examples/heuristics_HB_sihlbruecke.png" alt="Routing from Zurich Main Station to Sihlbrücke" height=250>
-      </a>
-      <div style="display: flex; flex-direction: row; justify-content: space-around">
-         <p style="color: #bf0202">Baseline</p>
-         <p style="color: #a19e15">Heuristics</p>
-      </div>
-      
-   </div>
-   <div>
-      <a href="examples/heuristics_user_sihlbruecke_opera.html">
-         <img src="examples/heuristics_user_sihlbruecke_opera.png" alt="Routing from Sihlbrücke to Opernhaus" height=250>
-      </a>
-      <div style="display: flex; flex-direction: row; justify-content: space-around">
-         <p style="color: #a19e15">Heuristics</p>
-         <p style="color: #267d0e">Heuristics + User</p>
-      </div>
-      
-   </div>
-</div>
+<img src="examples/heuristics_HB_sihlbruecke.png" alt="Routing from Zurich Main Station to Sihlbrücke" height=250>&nbsp;<img src="examples/heuristics_user_sihlbruecke_opera.png" alt="Routing from Sihlbrücke to Opernhaus" height=250>
